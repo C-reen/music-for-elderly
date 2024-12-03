@@ -1,0 +1,163 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styletips.css">
+  <title>การบำบัดความเครียดด้วยดนตรี</title>
+  <style>
+    @media screen and (max-width: 800px) {
+        .container,.header-section,.header-section, img,.cont,.content-section h1 ,.content-section p,.button-group,.button-group button ,.link, .link1 ,.link1 a footer .end img {
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+      margin-left: 4px;
+
+    }
+}
+@media screen and (max-width: 800px) {
+    .button-group,.content-section imgent-section ,.text{
+      width: 40%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+}
+      
+      /* Container for the whole page */
+      .container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 0px;
+          width: 100%;
+      }
+
+      .header-section {
+            width: 100%; /* Make the header take full width of the container */
+            overflow: hidden; /* Ensure no overflow outside the container */
+        }
+
+        .header-section img {
+            width: 100%; /* Make the music image span the entire width of the container */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 10px;
+        }
+
+      /* Content Section with Text and Image Side by Side */
+      .content-section {
+          display: flex;
+          align-items: center; /* Align image and text vertically */
+          gap: 20px; /* Space between the image and the text */
+          max-width: 800px;
+          margin-top: 20px;
+      }
+
+      .content-section img {
+          max-width: 50%; /* Set the image size */
+          border-radius: 10px;
+      }
+
+      .content-section .text {
+          max-width: 60%; /* Ensure the text takes up the remaining space */
+      }
+
+      .content-section h1 {
+          font-size: 2rem;
+          color: #2c3e50;
+          margin-bottom: 10px;
+      }
+
+      .content-section p {
+          font-size: 1.1rem;
+          color: #34495e;
+          line-height: 1.6;
+          margin-bottom: 20px;
+      }
+
+      /* Button Group */
+      .button-group {
+          display: flex;
+          justify-content: center;
+          gap: 30px;
+      }
+
+      .button-group button {
+          background-color: #f5a623;
+          color: white;
+          border: none;
+          border-radius: 25px;
+          padding: 10px 20px;
+          font-size: 1rem;
+          cursor: pointer;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          text-decoration: none;
+      }
+
+      .button-group button:hover {
+          background-color: #e59420;
+      }
+
+      /* Link Section */
+      .link, .link1 {
+          margin-top: 20px;
+          text-align: center;
+      }
+
+      .link1 a {
+          color: #3498db;
+          text-decoration: none;
+          font-size: 1rem;
+      }
+
+      /* Footer */
+      footer {
+          text-align: center;
+          margin-top: 30px;
+      }
+
+      .end img {
+          max-width: 100%;
+          height: auto;
+      }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+      <!-- Header with Music Image -->
+      <div class="header-section">
+          <img src="images/music.png" alt="Music Image">
+      </div>
+
+      <!-- Content Section with Image and Text Side by Side -->
+      <div class="content-section">
+          <img src="images/old1.png" alt="Elderly playing game">
+          <div class="text">
+              <h1>How to set</h1>
+              <p>
+                  มักเริ่มด้วยการเตรียมความพร้อมด้วยการทำสมาธิเล่นเกมหรือฝึกสมอง 
+                  แล้วเชื่อมโยงเข้าเนื้อหาส่วนที่ต้องการให้ผู้สูงวัยเรียนรู้ในรูปแบบของตนเอง
+              </p>
+              <div class="button-group">
+                  <button><a href="https://www.gotoknow.org/posts/351646">เนื้อเพลง</a></button>
+                  <button><a href="https://teemtaro.com/%E0%B8%AA%E0%B8%84%E0%B8%A3%E0%B8%B4%E0%B8%9B%E0%B8%95%E0%B9%8C%E0%B8%9E%E0%B8%B4%E0%B8%98%E0%B8%B5%E0%B8%81%E0%B8%A3%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%A7%E0%B8%B1%E0%B8%99%E0%B8%AA%E0%B8%B8%E0%B8%99/">กลอน</a></button>
+                  <button><a href="https://creativetalkconference.com/storytelling-secret/">เรื่องเล่า</a></button>
+              </div>
+          </div>
+      </div>
+      <img src="images/8.png" alt="">
+      <img src="images/9.png" alt="">
+      <!-- Link Section -->
+      <div class="link">
+          <a href="intro.html"><img src="images/back.png" alt="Back"></a>
+          <a href="tips.html"><img src="images/next.png" alt="Next"></a>
+      </div>
+
+      <!-- Link to Homepage -->
+      <div class="link1">
+          <a href="index.html"><p>GO TO HOMEPAGE</p></a>
+      </div>
+
+      <!-- Footer -->
+      <footer>
+          <div class="end">
+              <img src="images/end.png" alt="End Image">
+          </div>
+      </footer>
+  </div>
+</body>
+</html>
