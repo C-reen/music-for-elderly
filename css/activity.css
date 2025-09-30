@@ -8,6 +8,7 @@
     box-sizing: border-box;
     font-family: "Sarabun", sans-serif;
 }
+@media screen and (max-width: 768px) {
 html{height: 100%;}
 body
 {
@@ -177,4 +178,5 @@ img
       align-items: center;
 
     }
+}
 }

@@ -8,6 +8,7 @@
     box-sizing: border-box;
     font-family: "Sarabun", sans-serif;
 }
+@media screen and (max-width: 768px) {
 html{height: 100%;}
 body
 {
@@ -159,10 +160,4 @@ img
     margin-top: 10px ;
     justify-content: center;
 }
-@media screen and (max-width: 980px) {
-    .body,h1,h2,h3,h4,h5,h6,p,img,.container,.main-content,.link,.youtube,.header,.logo,.nav ul,.nav ul li a,.nav ul li a:hover{
-      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
-      margin-left: 4px;
-
-    }
 }
