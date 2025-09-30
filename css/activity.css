@@ -172,7 +172,7 @@ img
     }
 }
 @media screen and (max-width: 980px) {
-    .link1 img,.link img:hover,.link1 img,.link1 img:hover,.end,header,.logo,nav ul,nav ul li a,nav ul li a:hover {
+    .link1 img,.link img:hover,.link1 img,.link1 img:hover,.end,.header,.logo,.nav ul,.nav ul li a,.nav ul li a:hover {
       width: 10%; /* The width is 100%, when the viewport is 800px or smaller */
       align-items: center;
 
