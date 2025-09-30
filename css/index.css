@@ -107,7 +107,7 @@ img
     height: auto;
 }
 @media screen and (max-width: 980px) {
-    .body,h1,h2,h3,h4,h5,h6,p,img,.container,.main-content,.link,.link img:hover,.youtube{
+    .body,h1,h2,h3,h4,h5,h6,p,img,.container,.main-content,.link,.link img:hover,.youtube,.end,.video-container,.video-container video{
       width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
       margin-left: 4px;
 
