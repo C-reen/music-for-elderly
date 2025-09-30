@@ -4,8 +4,9 @@
 {
     box-sizing: border-box;
     font-family: "Sarabun", sans-serif;
-
 }
+@media screen and (max-width: 980px) 
+{
 html{height: 100%;}
 body
 {
@@ -106,17 +107,4 @@ img
     max-width: 100%;
     height: auto;
 }
-@media screen and (max-width: 980px) {
-    .body,.video-section h2,h3,h4,h5,h6,p,img,.container,.main-content,.link,.link img:hover,.youtube,.end,.video-container,.video-container video{
-      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
-      margin-left: 4px;
-
-    }
-}
-@media screen and (max-width: 980px) {
-    .link img{
-      width: 95%; /* The width is 100%, when the viewport is 800px or smaller */
-      margin-left: 4px;
-
-    }
 }
