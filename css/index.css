@@ -57,8 +57,7 @@ img
 .link
 {
     display: flex;
-    flex-direction:table;
-    flex-wrap: wrap;   
+    flex-direction:table;  
     margin-top: 20px ;
     border-radius: 5px;
     justify-content: center;
