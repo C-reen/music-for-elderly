@@ -102,8 +102,27 @@ img
 .end
 {
     width: 100%;
+    max-width: 950px;
     margin-top: 10px ;
     justify-content: center;
+}
+.video-container 
+{
+    max-width: 960px;
+    margin: 10;
+    background:#eb9e5f ;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: center; /* จัดกึ่งกลาง */
+    gap: 10px;              /* เว้นระยะห่างระหว่างคลิป */
+}
+  
+.video-container video
+{
+    max-width: 100%;
+    height: auto;
 }
 @media screen and (max-width: 980px) {
     .body,h1,h2,h3,h4,h5,h6,p,img,.container,.main-content,.link,.link img:hover,.youtube{
