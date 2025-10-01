@@ -58,12 +58,15 @@ img
     display: flex;
     flex-direction:table;  
     margin-top: 20px ;
+    margin-right: 20px ;
+    margin-left: 20px ;
+    margin-bottom: 20px ;
     border-radius: 5px;
     justify-content: center;
 }
 .link img
 {
-    width: 25%;
+    width: 93%;
     opacity: 1;
     transition: all 0.5s;
     margin: 4px;

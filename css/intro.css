@@ -1,26 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bentham&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-
-/* ================== Reset ================== */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: "Sarabun", sans-serif;
-}
-
-/* ================== Body ================== */
-body {
-    background: #fdfbfb;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-/* ================== Header ================== */
 header {
     background-color: #202a56; 
     color: white;
@@ -29,6 +6,7 @@ header {
     align-items: center;
     padding: 12px 20px;
     width: 100%;
+    position: relative;
 }
 
 .logo {
@@ -36,6 +14,7 @@ header {
     font-weight: bold;
 }
 
+/* menu หลัก */
 nav ul {
     list-style: none;
     display: flex;
@@ -53,129 +32,50 @@ nav ul li a:hover {
     color: #000;
 }
 
-/* ================== Text ================== */
-h1 {
-    font-family: "Itim", cursive;
-    font-size: 30px;
-    font-weight: 400;
-    margin-top: 15px;
-    text-align: center;
-}
-
-h3 {
-    font-family: "DynaPuff", system-ui;
-    font-size: 40px;
-    font-weight: 400;
-    margin-top: 10px;
-    text-align: center;
-}
-
-h5 {
-    font-family: "Sarabun", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.3;
-    text-align: center;
-}
-
-p {
-    font-family: "Mali", cursive;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.3;
-    margin-top: 10px;
-    max-width: 950px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* ================== Layout ================== */
-img {
-    width: 100%;
-    border-radius: 5px;
-    display: block;
-    margin: 10px auto 0;
-}
-
-.container {
-    width: 100%;
-    max-width: 980px;
-    display: flex;
+/* hamburger (ซ่อนใน desktop) */
+.menu-toggle {
+    display: none;
     flex-direction: column;
-    margin: 0 auto;
-    background: #d2dae4;
-    align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    flex: 1 0 auto;
+    cursor: pointer;
+    gap: 5px;
 }
 
-.main-content {
-    width: 100%;
-    padding: 20px;
-}
-
-.link {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-top: 20px;
-}
-
-.link img {
-    width: 40px;
-    transition: all 0.3s;
-}
-
-.link img:hover {
-    opacity: 0.6;
-    transform: scale(1.1);
-}
-
-.col-r {
-    padding-top: 15px;
-    width: 100%;
-    max-width: 950px;
-    height: 70px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
-.end {
-    width: 100%;
-    margin-top: 20px;
-    text-align: center;
+.menu-toggle div {
+    width: 25px;
+    height: 3px;
+    background: white;
 }
 
 /* ================== Responsive ================== */
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 768px) {
     header {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    nav {
+        width: 100%;
     }
 
     nav ul {
-        flex-wrap: wrap;
-        gap: 10px;
+        flex-direction: column;
+        width: 100%;
+        background: #202a56;
+        display: none; /* เริ่มซ่อน */
         margin-top: 10px;
+        padding: 10px 0;
     }
 
-    .container {
-        margin: 0 10px;
+    nav ul li {
+        text-align: center;
+        padding: 10px 0;
     }
 
-    h1 {
-        font-size: 24px;
+    .menu-toggle {
+        display: flex;
     }
 
-    h3 {
-        font-size: 28px;
-    }
-
-    p {
-        font-size: 15px;
-        padding: 0 10px;
+    /* เมื่อ active (กดปุ่ม hamburger) */
+    nav.active ul {
+        display: flex;
     }
 }
